@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Location Example</title>
+    <!-- All the css files should go here -->
+    <link rel="stylesheet" href="main.css" />
+    <!-- All third party javascript files should be referred here -->    
+</head>
+<body>
+    <button onclick="geoFindMe()">Show my location</button>
+    <div id="result">Result will be displayed here</div>
+    <script>
+            function geoFindMe() {
+                navigator.geolocation.getCurrentPosition(locationSuccess,locationFailed);            
+            }
+            function locationSuccess(position) {
+                var latitude=position.coords.latitude;
+                var longitude=position.coords.longitude;
+                document.getElementById("result").innerHTML= "Location in Lat and Long "+latitude+" and "+longitude;
+            }
+            function locationFailed() {
+                alert("Error")
+            }   
+    </script>
+
+    <!-- All the user defined javascript shoulf be referred here-->
+</body>
+</html>

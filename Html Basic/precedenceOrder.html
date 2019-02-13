@@ -1,0 +1,31 @@
+<!-- " !important " helps to make sure that one has max precedence -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <title>Order of precedence</title>
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <!-- <script src="main.js"></script> -->
+    <style>
+        h1{
+            color:red !important;
+            font-style: italic;
+        }
+        #h1ID{
+            color:green !important;
+        }
+        .h1Class{
+            color: blueviolet;
+        }    
+    </style>
+
+</head>
+<body>
+    <h1>Welcome to CSS 3</h1>
+    <h1 id="h1ID" class="h1Class" style="color: navy !important">Id based header</h1>
+    <h1 class="h1Class">Class based header</h1>
+</body>
+</html>

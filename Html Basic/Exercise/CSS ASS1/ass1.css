@@ -1,0 +1,85 @@
+.box{
+    box-shadow: 5px 2px 2px gold;
+    border-radius: 4px;
+    border: 1px solid #d3d3d3;
+    transform: rotate(2deg);
+    width: 30%;
+    /* height: 200px; */
+    margin: auto;
+    text-align: center;
+    /* display: inline; */
+}
+
+p{
+    color:red;
+    text-shadow: 1px 1px 2px darkslategrey;
+}
+
+.left{
+    width: 45%;
+    float:left;
+}
+
+.right{
+    width: 45%;
+    float:left;
+}
+.box1{
+    text-align: center;
+    box-shadow: 5px 2px 2px gold;
+    border-radius: 4px;
+    border: 1px solid #d3d3d3;
+    transform: rotate(2deg);
+    width: 45%;
+    margin: 6px 3px 6px 3px;
+    
+    /* display: inline; */
+}
+
+.box1:nth-child(even) {
+    float: left;
+  }
+
+  .box1:nth-child(odd) {
+    float: left;
+  }
+
+.box2{
+    text-align: center;
+    box-shadow: 1px 2px 5px 0px gold;
+    border-radius: 4px;
+    border: 1px solid #d3d3d3;
+    transform: rotate(-2deg);
+    width: 45%;
+    margin: 6px 3px 6px 3px;
+    /* display: inline; */
+}
+
+.box2:nth-child(even) {
+    float: left;
+  }
+
+.box2:nth-child(odd) {
+    float: left;
+  }
+
+.dash{
+    margin: auto;
+    position: absolute;
+    border: 1px dashed;
+    padding: 20px 20px 20px 20px;
+    width:93%;
+    height: 500px;
+}
+
+.box1:hover {
+    color: orange;
+    border: 1px solid orangered;
+    box-shadow: 1px 2px 5px 3px gold;
+  }
+
+.box2:hover {
+    color: orange;
+    border: 1px solid orangered;
+    box-shadow: 1px 2px 5px 3px gold;
+  }

@@ -1,4 +1,5 @@
 <!-- Use clear to fit the elements in the container -->
+<!-- IMP IMP IMP -->
 
 
 <!DOCTYPE html>
@@ -16,6 +17,13 @@
             width: 200px;
             margin: 0;
             border: 3px solid green;
+        }
+        .clear-fix:before, .clear-fix:after{
+            content:"";
+            display: table;
+        }
+        .clear-fix:after{
+            clear:both;
         }
         .float-left{
             float: left;
@@ -36,11 +44,11 @@
     </style>
 </head>
 <body>
-    <div id="outer">
+    <div class="clear-fix" id="outer">
         The content is part of the outer div
         <img class="float-left" src="Sample Images\Lighthouse.jpg" >
         <img class="float-right" src="Sample Images\Tulips.jpg" >
-        <div id="last-element"></div>
+        <!-- <div id="last-element"></div> -->
     </div>
 </body>
 </html>

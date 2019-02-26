@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Hacks</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="img/favicon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Poppins:300,400,500,700"
+    rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+
+  <header id="header">
+    <div class="container bg-dark">
+
+      <div id="logo" class="pull-left">
+        <a href="#hero"><img src="img/logo.png" alt="" title="" /></img></a>
+        <!-- Uncomment below if you prefer to use a text logo -->
+        <!--<h1><a href="#hero">Regna</a></h1>-->
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li class="menu-active"><a href="#hero">Home</a></li>
+          <li><a href="#about">Form</a></li>
+
+        </ul>
+      </nav><!-- #nav-menu-container -->
+    </div>
+  </header><!-- #header -->
+
+  <!--==========================
+    Hero Section
+  ============================-->
+  <section id="hero">
+    <div class="hero-container">
+      <h1>Welcome to Our Website</h1>
+      <h2>Click on button to view the form!</h2>
+      <a href="#about" class="btn-get-started">View Form</a>
+    </div>
+  </section><!-- #hero -->
+
+  <main id="main">
+
+    <!--==========================
+      Form Section
+    ============================-->
+    <section id="about">
+
+      <div class="container">
+
+
+
+        <form method="POST" action="#">
+          <h1>Registration Form</h1>
+          <div>
+            <div>
+              <label>Enter your First name:</label>
+              <input type="text" id="fname">
+            </div>
+            <div>
+              <label>Enter your Last name:</label>
+              <input type="text" id="lname">
+            </div>
+            <div>
+              <label>Enter your age:</label>
+              <input type="number" min="18" max="100" id="age">
+            </div>
+            <div>
+              <label>Gender:</label>
+              <div>
+                <label><input type="radio" name="gender" value="male"> Male</label>
+              </div>
+              <div>
+                <label><input type="radio" name="gender" value="female"> Female</label>
+              </div>
+
+            </div>
+            <div>
+              <label>Country:</label>
+              <select>
+                <option>India</option>
+                <option>United States</option>
+                <option>United Kingdom</option>
+                <option>Canada</option>
+              </select>
+            </div>
+            <div>
+              <!-- <label><input type="checkbox"  id="check"> Remember me</label> -->
+              <input type="checkbox" onchange="document.getElementById('submitform').disabled = !this.checked;" /> Agree
+              to terms.
+
+            </div>
+            <div>
+
+              <!-- <button type="button"  id="btncheck">Submit</button> -->
+              <!-- <div class="hero-container" id="hero"><a href="#about" class="btn-get-started">Submit</a></div> -->
+              <input type="button" name="Submit" class="inputButton" id="submitform" value=" Send "
+                 disabled />
+
+
+            </div>
+            <div>
+              <div class="alert alert-danger" id="first20" role="alert" hidden>
+                More than 20 characters entered in First name!
+              </div>
+              <div class="alert alert-danger" id="second20" role="alert" hidden>
+                More than 20 characters entered in Last name!
+              </div>
+              <div class="alert alert-danger" id="firstEmpty" role="alert" hidden>
+                Enter your first name!
+              </div>
+              <div class="alert alert-danger" id="secondEmpty" role="alert" hidden>
+                Enter your last name!
+              </div>
+              <div class="alert alert-danger" id="ageEmpty" role="alert" hidden>
+                Enter your age!
+              </div>
+              <div class="alert alert-danger" id="genderEmpty" role="alert" hidden>
+                Choose your gender!
+              </div>
+              <div class="alert alert-danger" id="countryEmpty" role="alert" hidden>
+                Select your country!
+              </div>
+
+            </div>
+          </div>
+        </form>
+
+
+
+      </div>
+
+    </section><!-- #about -->
+
+
+
+    
+
+  </main>
+  <script src="ass5.js"></script>
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+
+
+</body>
+
+</html>

@@ -1,7 +1,6 @@
 (function () {
     // body of the function
     'use strict';
-
     alert("Check Console");
 
     var movies = [{ title: "In Bruges", rating: 5, hasWatched: true },

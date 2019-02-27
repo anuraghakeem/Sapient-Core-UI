@@ -58,3 +58,5 @@ var user={name:"Bhavika",age:60,gender:"m"};
 var{name,age}={...user}
 console.log(name);
 console.log(age);
+
+var [a,b]=[1,2];

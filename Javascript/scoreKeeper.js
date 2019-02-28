@@ -35,6 +35,7 @@
     }
     p2.addEventListener("click", incrementScoreOfP2);
     function resetGame() {
+        // console.log(this);
         game = true;
         scoreP1 = 0;
         scoreP2 = 0;

@@ -35,7 +35,6 @@
     }
     p2.addEventListener("click", incrementScoreOfP2);
     function resetGame() {
-        // console.log(this);
         game = true;
         scoreP1 = 0;
         scoreP2 = 0;
@@ -48,8 +47,8 @@
 
     function changeMaxScore() {
         document.querySelector("#max").textContent = this.value;
-        maxScore=Number(this.value);
-        game=true;
+        maxScore = Number(this.value);
+        game = true;
         document.querySelector("#p1").classList.remove("green");
         document.querySelector("#p2").classList.remove("green");
         scoreP1 = 0;

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>hello React</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="main.css"> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.6.2/react.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/15.6.2/react-dom.js"></script>
+    
+</head>
+
+<body>
+    <divn id="container">
+
+        </div>
+    <script>
+        //Create React Element! React.createElement(<tag>eg:'h1'   ,   ids and class eg: {id:"container"}}   ,   
+        //child   eg:"HELLO")
+        var h1Element = React.createElement('h1', null, "HELLO");
+        var pElement = React.createElement('p', {id:"firstPara"}, "This is a para"); 
+        var fragment=[h1Element,pElement];
+        var sectionElement = React.createElement('section', {}, fragment);
+        ReactDOM.render(sectionElement, document.getElementById('container'));
+    </script>
+</body>
+
+</html>

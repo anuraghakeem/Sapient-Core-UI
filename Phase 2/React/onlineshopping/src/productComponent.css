@@ -1,0 +1,42 @@
+.main1{
+    margin-right:45px;
+    margin-bottom: 45px;
+    margin-top: 45px;
+    margin-left: 45px;
+    /* padding: 30px; */
+    
+    background: white;
+    /* border: solid black 1px; */
+}
+
+.padddingProb{
+    margin:0px;
+}
+
+.main1:hover{
+    box-shadow: -5px 6px 13px 4px rgba(0,0,0,0.67);
+    -webkit-box-shadow: -5px 6px 13px 4px rgba(0,0,0,0.67);
+    -moz-box-shadow: -5px 6px 13px 4px rgba(0,0,0,0.67);
+}
+
+.name1>h1{
+    background: lightskyblue;
+    margin-top: 0px; 
+}
+
+.name2>h1{
+    background: lightskyblue;
+    margin-bottom: 0px; 
+}
+
+img{
+    width: 200px;
+    height:200px;
+}
+.main2{
+    background: lightskyblue;
+}
+
+.btn-danger{
+    margin-left: 10px; 
+}

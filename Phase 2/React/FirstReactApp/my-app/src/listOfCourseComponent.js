@@ -18,7 +18,7 @@ export default class ListOfButtons extends React.Component {
         //Take value from textbox
         console.log(this.refs.txtInput.value)
         let theButtonToBeDeleted= this.refs.txtInput.value;
-        var theNewList= this.state.buttons.filter(v=>v!=theButtonToBeDeleted);
+        var theNewList= this.state.buttons.filter(v=>v!==theButtonToBeDeleted);
         this.setState({buttons:theNewList});
     }
     render() {

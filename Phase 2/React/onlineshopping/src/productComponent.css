@@ -5,7 +5,10 @@
     margin-left: 45px;
     /* padding: 30px; */
     
-    background:#1f1c18; ;
+    background: rgb(85, 9, 0);  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, rgb(32, 31, 30), rgb(85, 9, 0));  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, rgb(32, 31, 30), rgb(85, 9, 0)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
     /* border: solid black 1px; */
 }
 

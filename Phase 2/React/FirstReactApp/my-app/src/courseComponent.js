@@ -9,6 +9,9 @@ export default class ButtonComponent extends React.Component {
     //change logic
     // this.state.count++;
     this.setState({count:this.state.count+1})
+  }
+  componentWillUnmount(){
+    console.log('Unmounting');
   }    
   render() {
       return  <button className="btn btn-primary"

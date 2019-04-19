@@ -1,12 +1,12 @@
 import React from 'react';
-export default class AddFormComponent extends React.Component {
+class AddFormComponent extends React.Component {
 
     addNewCard() {
-        let theNewObject = { name: (this.refs.txtName.value), id: (this.refs.txtID.value), rating: +(this.refs.txtRating.value), likes: +(this.refs.txtLikes.value), quantity: +(this.refs.txtQuantity.value), image: (this.refs.txtImage.value) };
-        this.props.addNewCard(theNewObject);
+        let theNewProd = { name: (this.refs.txtName.value), id: (this.refs.txtID.value), rating: +(this.refs.txtRating.value), likes: +(this.refs.txtLikes.value), quantity: +(this.refs.txtQuantity.value), image: (this.refs.txtImage.value) };
+        this.props.addNewCard(theNewProd);
     }
     render() {
-        return <div className="row">
+        return( 
             <form>
                 <div className="row">
                     <div className="col-sm-12 text-center formHeading">
@@ -33,12 +33,13 @@ export default class AddFormComponent extends React.Component {
                 </div>
                 <div className="row">
                     <div className="col-sm-12 col-sm-push-5">
-                        <input type="button" className="btn btn-danger" value="Add Card" onClick={this.addNewCard.bind(this)} />
+                        <input type="button" className="btn btn-danger" value="Add Item To List" onClick={this.addNewCard.bind(this)} />
                     </div>
                 </div>
 
             </form>
-        </div>
+        )
 
     }
 }
+export default AddFormComponent;

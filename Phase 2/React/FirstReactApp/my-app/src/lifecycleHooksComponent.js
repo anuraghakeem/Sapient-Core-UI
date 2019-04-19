@@ -1,53 +1,62 @@
 import React from 'react';
 
-export default class TextRenderComponent extends React.Component {
-    constructor(props){
-      super(props);
-      this.state={count:this.props.initialCount};
-      this.state={buttons:[10,20,30,40,50],text:""}
+ class TextRenderComponent extends React.Component {
+    constructor(props) {
+        super(props);
+        // this.state = { count: this.props.initialCount };
+        this.state = { text: "" }
     }
-    addText(){
+    addText() {
         //Take value from textbox
+        console.log("--- addText start ---")
         console.log(this.refs.txtInput2.value)
-        
-        this.setState({text:this.refs.txtInput2.value})
+        this.setState({ text: this.refs.txtInput2.value })
+        console.log("--- addText finish ---")
     }
 
-    
-    componentWillMount(){
-        console.log('will mount')
+    componentWillMount() {
+        console.log('---componentWillMount---')
     }
 
-    componentDidMount(){
-        console.log('did mount')
+    // --- render ---
+
+    componentDidMount() {
+        console.log('---componentDidMount---')
     }
 
-    shouldComponentUpdate(){
+    shouldComponentUpdate() {
         //Called before render
         // console.log(this.state);
-        //Three parameters: 
-        console.log('shouldComponentUpdate');
-        console.log(arguments);
+        //Three parameters: 1. Arguments
+        console.log('---shouldComponentUpdate start---')
+        console.log(arguments)
 
-        if(arguments[1].text.length<10)
+        if (arguments[1].text.length < 10){
+            console.log('---shouldComponentUpdate over---')
             return true;
-        else return false;
+        }
+            
+        else{
+            console.log('---shouldComponentUpdate over---');
+            return false;
+        }   
     }
 
-    componentWillUpdate(){
-        console.log('componentWillUpdate');
+    componentWillUpdate() {
+        console.log('---componentWillUpdate---')
     }
 
-    componentDidMount(){
-        console.log('componentdidUpdate');
+    componentDidUpdate() {
+        console.log('---componentdidUpdate---')
     }
 
     render() {
-        console.log('render');
+        console.log('---render---');
         // console.log(this.state);
-        return <div className="row">
-                <input type="text" ref="txtInput2" onChange={this.addText.bind(this)}/>
+        return  <div className="row">
+                <input type="text" ref="txtInput2" onChange={this.addText.bind(this)} />
                 <div className="row">{this.state.text}</div>
                 </div>
     }
-  }
+}
+export default TextRenderComponent;

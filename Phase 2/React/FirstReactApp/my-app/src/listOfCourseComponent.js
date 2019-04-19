@@ -12,16 +12,15 @@ export default class ListOfButtons extends React.Component {
     addNewButton(){
         //Take value from textbox
         console.log(this.refs.txtInput.value)
-        
         this.setState({buttons:[...this.state.buttons,+(this.refs.txtInput.value)]})
-    }
-
+    } 
     delAButton(){
        
         //Take value from textbox        
         let theButtonToBeDeleted= this.refs.txtInput.value;       
-        var theNewList= this.state.buttons.filter(x => x!= theButtonToBeDeleted);       
-        this.setState({buttons:theNewList});
+        var theNewList= this.state.buttons.filter(x => x!= theButtonToBeDeleted);
+        console.log(theNewList)       
+        this.setState({buttons:theNewList}) 
     }
 
     // componentWillUnmount(){
@@ -37,11 +36,12 @@ export default class ListOfButtons extends React.Component {
     // }
 
     render() {
+        console.log("render buttons")
         var list=this.state.buttons.map(c => 
             <ButtonComponent initialCount={c} key={c}/>);
         return  <div className="container">
                 <div className="row">
-                Enter Number:<input type="text" ref="txtInput"/>
+                Enter Number:<input type="number" ref="txtInput"/>
                 <button className="btn btn-success" onClick={this.addNewButton.bind(this)}>ADD</button>
                 <button className="btn btn-danger" onClick={this.delAButton.bind(this)}>DEL</button>
                 <div className="row">{list}</div>

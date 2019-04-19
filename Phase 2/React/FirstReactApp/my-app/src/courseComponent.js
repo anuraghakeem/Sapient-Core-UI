@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{ Component } from 'react';
 import './courseComponent.css';
 export default class ButtonComponent extends React.Component {
   constructor(props){

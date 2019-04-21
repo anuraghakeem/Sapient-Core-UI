@@ -1,48 +1,56 @@
-.main1{
-    margin-right:45px;
-    margin-bottom: 45px;
-    margin-top: 45px;
-    margin-left: 45px;
-    /* padding: 30px; */
-    
-    background: rgb(85, 9, 0);  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, rgb(32, 31, 30), rgb(85, 9, 0));  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, rgb(32, 31, 30), rgb(85, 9, 0)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+.main1 {
+  margin-right: 45px;
+  margin-bottom: 45px;
+  margin-top: 45px;
+  margin-left: 45px;
+  /* padding: 30px; */
 
-    /* border: solid black 1px; */
+  background: rgb(85, 9, 0); /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    rgb(32, 31, 30),
+    rgb(85, 9, 0)
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    rgb(32, 31, 30),
+    rgb(85, 9, 0)
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  /* border: solid black 1px; */
 }
 
-.padddingProb{
-    margin:0px;
+.padddingProb {
+  margin: 0px;
 }
 
-.main1:hover{
-    box-shadow: -5px 6px 13px 4px rgba(0,0,0,0.67);
-    -webkit-box-shadow: -5px 6px 13px 4px rgba(0,0,0,0.67);
-    -moz-box-shadow: -5px 6px 13px 4px rgba(0,0,0,0.67);
+.main1:hover {
+  box-shadow: -5px 6px 13px 4px rgba(0, 0, 0, 0.67);
+  -webkit-box-shadow: -5px 6px 13px 4px rgba(0, 0, 0, 0.67);
+  -moz-box-shadow: -5px 6px 13px 4px rgba(0, 0, 0, 0.67);
 }
 
-.name1>h1{
-    background: #8E0E00;
-    margin-top: 0px;
-    color:#ffffff; 
+.name1 > h1 {
+  background: #8e0e00;
+  margin-top: 0px;
+  color: #ffffff;
 }
 
-.name2>h1{
-    background: #8E0E00;
-    margin-bottom: 0px;
-    color:#ffffff; 
+.name2 > h1 {
+  background: #8e0e00;
+  margin-bottom: 0px;
+  color: #ffffff;
 }
 
-img{
-    width: 200px;
-    height:200px;
+img {
+  width: 200px;
+  height: 200px;
 }
-.main2{
-    background: #8E0E00;
-    color:#ffffff; 
+.main2 {
+  background: #8e0e00;
+  color: #ffffff;
 }
 
-.btn-danger{
-    margin-left: 10px; 
+.btn-danger {
+  margin-left: 10px;
 }

@@ -1,42 +1,38 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Component Basics With JSX</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.6.2/react.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/15.6.2/react-dom.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.0-alpha1/JSXTransformer.js"></script>
-</head>
+  </head>
 
-<body>
-    <divn id="container">
-
-    </div>
+  <body>
+    <div id="container"></div>
     <script type="text/jsx">
-        //1.    Create Component
-        //2.    Instantiating the component
+      //1.    Create Component
+      //2.    Instantiating the component
 
-        class BasicComponent extends React.Component {
+      class BasicComponent extends React.Component {
 
-            render() {
-                return <section>
-                            <h5 className="header"> hello JSX!</h5>
-                            <p> This is a paragraph1</p>
-                            {/*  Multi line comment
-                               works on multiple lines*/}
-                            <p> This is a paragraph2</p>
-                        </section>
-            }
-        }
+          render() {
+              return <section>
+                          <h5 className="header"> hello JSX!</h5>
+                          <p> This is a paragraph1</p>
+                          {/*  Multi line comment
+                             works on multiple lines*/}
+                          <p> This is a paragraph2</p>
+                      </section>
+          }
+      }
 
-        //Using multiple instances for REUSABILITY
-        var basicCompInstance = <div><BasicComponent/>
-                                <BasicComponent/></div>
-        ReactDOM.render(basicCompInstance, document.getElementById('container'));
+      //Using multiple instances for REUSABILITY
+      var basicCompInstance = <div><BasicComponent/>
+                              <BasicComponent/></div>
+      ReactDOM.render(basicCompInstance, document.getElementById('container'));
     </script>
-</body>
-
+  </body>
 </html>

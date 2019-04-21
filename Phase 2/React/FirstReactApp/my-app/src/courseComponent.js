@@ -1,22 +1,25 @@
-import React,{ Component } from 'react';
+import React, { Component } from 'react';
 import './courseComponent.css';
+
 export default class ButtonComponent extends React.Component {
-  constructor(props){
+  constructor(props) {
     super(props);
-    this.state={count:this.props.initialCount};
+    this.state = { count: this.props.initialCount };
   }
-  incrementCount(){
+
+  incrementCount() {
     //change logic
     // this.state.count++;
-    this.setState({count:this.state.count+1})
+    this.setState({ count: this.state.count + 1 })
   }
-  componentWillUnmount(){
+  componentWillUnmount() {
     console.log('Unmounting');
-  }    
+  }
   render() {
-      return  <button className="btn btn-primary"
-      onClick={this.incrementCount.bind(this)}>
-                {this.state.count}
-                </button>
+    return (
+      <button className="btn btn-primary"
+        onClick={this.incrementCount.bind(this)}>
+        {this.state.count}
+      </button>)
   }
 }

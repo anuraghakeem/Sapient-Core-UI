@@ -1,7 +1,11 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
 import ButtonComponent from './courseComponent'
 import TextRenderComponent from './lifecycleHooksComponent';
 import PostsComponent from './ajaxComponent';
+import FunctionalComponent from './functionalComponent'
+import Blog, {Form,Comment} from './fragmentComponent'
+
 export default class ListOfButtons extends React.Component {
     constructor(){
         super();
@@ -52,6 +56,12 @@ export default class ListOfButtons extends React.Component {
                 </div> */}
                 <TextRenderComponent text={this.state.text} />
                 <PostsComponent />
+                <FunctionalComponent msg="This is the message from the functional component"/>
                 </div>
     }
 }
+var BlogWithFormAndfComment=<Blog>
+                                <Comment />
+                                <Form />
+                            </Blog>
+ReactDOM.render(BlogWithFormAndfComment , document.getElementById('root2'));

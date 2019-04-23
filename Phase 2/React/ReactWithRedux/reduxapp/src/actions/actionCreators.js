@@ -4,9 +4,10 @@ export function AddNewProduct() {
     };
 }
 
-export function RemoveProduct() {
+export function RemoveProduct(theId) {
     return {
-        type : "REMOVE_PRODUCT"
+        type : "REMOVE_PRODUCT",
+        theId
     };
 
 }

@@ -17,13 +17,17 @@ export default class UserDetailsComponent extends React.Component {
         )
     }
     render(){
-    var responseList = this.state.userDetails.map(p => {return<React.Fragment><li>p.login</li><li>p.avatar_url</li></React.Fragment>})
-        console.log(responseList);
+    // var responseList = this.state.userDetails.map(p => {return<React.Fragment><li>p.login</li><li>p.avatar_url</li></React.Fragment>})
+    //     console.log(responseList);
         return(<React.Fragment>
            <h1>User Details</h1>
             <ul>
                 {/*  posts to be created*/}
-                {responseList}
+                {/* {responseList} */}
+                <li>{userDetails.login}</li>
+                <li>{userDetails.node_id}</li>
+                <li>{userDetails.avatar_url}</li>
+
             </ul>
             </React.Fragment>
             

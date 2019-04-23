@@ -8,8 +8,9 @@ export default class UserListComponent extends React.Component {
         this.state = { allUsers: [] }
     }
     componentDidMount() {
+        // let thePromise = axios.get('https://api.myjson.com/bins/10f8x0')
         
-        let thePromise = axios.get('https://api.myjson.com/bins/10f8x0')
+        let thePromise = axios.get('https://api.github.com/users/')
         thePromise.then(
             (response) => { this.setState({ allUsers: response.data }) },
             (error) => {console.log(error) }

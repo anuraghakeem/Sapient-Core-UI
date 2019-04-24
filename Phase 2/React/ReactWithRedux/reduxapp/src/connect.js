@@ -7,7 +7,8 @@ import { MainComponent } from "./components/main.component";
 function mapStateToProps(store){
     return {
         allusers: store.users,
-        allproducts: store.products
+        allproducts: store.products,
+        isLoading: true
     }
 }
 

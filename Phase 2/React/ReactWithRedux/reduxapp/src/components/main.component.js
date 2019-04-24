@@ -6,6 +6,7 @@ import {Route, Switch,} from "react-router-dom"
 export class MainComponent extends React.Component {
 componentDidMount(){
     this.props.FetchProducts();
+    // this.props.isLoading= false;
 }
     render(){
     return(

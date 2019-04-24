@@ -1,4 +1,5 @@
-import { createStore } from "redux";
+import { createStore, applyMiddleware } from "redux";
+import thunk from 'redux-thunk';
 import { rootReducer } from "../reducers/rootReducer";
 
 //create a new s+tore
@@ -33,4 +34,5 @@ var defdata = {
   users:[]
 };
 //createStore(reducer,data); //=> Redux!
-export var store = createStore(rootReducer, defdata);
+// export var store = createStore(rootReducer, defData);
+export var store = createStore(rootReducer, applyMiddleware(thunk));

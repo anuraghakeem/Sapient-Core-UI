@@ -27,7 +27,7 @@ export default class ProductComponent extends React.Component {
                 </div>
                 <div className="row" >
                     <div className="col-sm-6">
-                        <img src={this.props.Ut magna consectetur adipisicing in excepteur duis laboris ipsum labore aute enim reprehenderit aliquip quis.prod.image} alt="dell laptop" />
+                        <img src={this.props.prod.image} alt="dell laptop" />
                     </div>
                     <div className="col-sm-6 main2">
                         <h4>ID: {this.props.prod.id}</h4>

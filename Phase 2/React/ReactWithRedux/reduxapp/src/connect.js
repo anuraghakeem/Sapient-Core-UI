@@ -1,7 +1,8 @@
 import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
 import * as allactions from './actions/actionCreators';
-import { ShoppingCart } from "./components/shoppingcart.component";
+import { MainComponent } from "./components/main.component";
+
 
 function mapStateToProps(store){
     return {
@@ -15,4 +16,4 @@ function mapDispatchToProps(dispatcher){
 }
 
 
-export var Main = connect(mapStateToProps, mapDispatchToProps)(ShoppingCart);
+export var Main = connect(mapStateToProps, mapDispatchToProps)(MainComponent);

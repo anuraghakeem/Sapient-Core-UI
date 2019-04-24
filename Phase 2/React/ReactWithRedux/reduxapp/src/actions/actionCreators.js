@@ -1,6 +1,9 @@
-export function AddNewProduct() {
+import axios from 'axios';
+
+export function AddNewProduct(obj) {
     return {
-        type : "ADD_NEW_PRODUCT"
+        type : "ADD_NEW_PRODUCT",
+        obj
     };
 }
 
@@ -12,9 +15,10 @@ export function RemoveProduct(theId) {
 
 }
 
-export function IncrementLikes() {
+export function IncrementLikes(theIndex) {
     return {
-        type : "INCREMENT_LIKES"
+        type : "INCREMENT_LIKES",
+        theIndex
     };
 
 }
@@ -23,5 +27,25 @@ export function AddUser() {
     return {
         type : "ADD_USER"
     };
+
+}
+export function FetchProducts() {
+    //MAKE an ajax request
+    
+    var thePromise=axios.get("https://api.myjson.com/bins/hupsc");
+    return (dispatch)=>{
+        thePromise.then(
+            (response)=>{
+                console.log("Fethcing from ajax");
+                dispatch({
+                    type : "FETCH_PRODUCTS", 
+                    response: response.data
+                }) 
+            },
+            (err)=>{}
+        )
+    }
+    
+   
 
 }

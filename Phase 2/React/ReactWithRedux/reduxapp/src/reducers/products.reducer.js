@@ -18,6 +18,14 @@ export function products(defStore = [], action) {
                     ...defStore.slice(action.theIndex+1)
                     ];
             //return defStore; //return new store!
+            case 'DECREMENT_LIKES':
+            console.log("Within INCREMENT_LIKES product Reducer..");
+            return [
+                    ...defStore.slice(0,action.theIndex),
+                    {...defStore[action.theIndex],likes:defStore[action.theIndex].likes-1},
+                    ...defStore.slice(action.theIndex+1)
+                    ];
+            //return defStore; //return new store!
         case 'FETCH_PRODUCTS':        
             return action.response;
         default:

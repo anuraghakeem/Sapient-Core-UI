@@ -22,7 +22,13 @@ export function IncrementLikes(theIndex) {
     };
 
 }
+export function DecrementLikes(theIndex) {
+    return {
+        type : "DECREMENT_LIKES",
+        theIndex
+    };
 
+}
 export function AddUser() {
     return {
         type : "ADD_USER"

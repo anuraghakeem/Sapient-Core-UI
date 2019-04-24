@@ -27,7 +27,7 @@ export default class ProductComponent extends React.Component {
                 <div className="row ">
                     <div className="col-sm-12 col-sm-push-6">
                         <button className="btn btn-primary" onClick={this.props.IncrementLikes.bind(null,this.props.pindex)}><i className="fas fa-plus"></i></button>
-                        <button className="btn btn-danger">
+                        <button className="btn btn-danger" onClick={this.props.DecrementLikes.bind(null,this.props.pindex)}>
                             <i className="fas fa-minus"></i>
                         </button>
                     </div>

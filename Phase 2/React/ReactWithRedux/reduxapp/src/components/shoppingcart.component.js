@@ -5,10 +5,6 @@ import '../shoppingcart.component.css'
 
 
 export class ShoppingCart extends React.Component {
-//   addNewCard(newProduct) {
-//     this.setState({ productList: [...this.state.productList, (newProduct)] });
-// }
-  
   render() {
       console.log(this.props.allproducts);
       var list = this.props.allproducts.map((p,i) =>

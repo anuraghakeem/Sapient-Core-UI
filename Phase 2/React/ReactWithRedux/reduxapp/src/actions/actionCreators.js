@@ -38,7 +38,9 @@ export function AddUser() {
 export function FetchProducts() {
     //MAKE an ajax request
     
-    var thePromise=axios.get("https://api.myjson.com/bins/hupsc");
+    // var thePromise=axios.get("https://api.myjson.com/bins/s9f28");
+    var thePromise=axios.get("http://localhost:5000/products");
+
     return (dispatch)=>{
         thePromise.then(
             (response)=>{

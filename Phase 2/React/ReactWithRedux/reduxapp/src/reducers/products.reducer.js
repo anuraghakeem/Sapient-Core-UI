@@ -3,7 +3,7 @@ export function products(defStore = [], action) {
         case 'ADD_NEW_PRODUCT':
             console.log("Within ADD_NEW_PRODUCT product Reducer..");
             return [...defStore,action.obj];
-            //return defStore; //return new store!
+            // return defStore; //return new store!
         case 'REMOVE_PRODUCT':
             console.log("Within REMOVE_PRODUCT product Reducer..");
             console.log(action.theId+" Deleted");

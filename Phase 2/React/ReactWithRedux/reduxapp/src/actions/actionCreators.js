@@ -1,6 +1,7 @@
 import axios from 'axios';
 
 export function AddNewProduct(obj) {
+    axios.post("http://localhost:5000/addproducts", obj);
     return {
         type : "ADD_NEW_PRODUCT",
         obj

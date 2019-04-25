@@ -20,7 +20,9 @@ export class ShoppingCart extends React.Component {
     // return <h1>Shopping Cart Component!</h1>;
     return(
         <div className="container">
-                <Link to="/newproduct">Add new Card </Link>
+                <nav className="navbar navbar-dark bg-dark">
+                  <Link to="/newproduct">Add new Card </Link>
+                </nav>
                 {/* <AddFormComponent addNewCard={this.addNewCard.bind(this)} /> */}
                 <div className="row justify-content-between">
                     {list}

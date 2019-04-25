@@ -12,8 +12,8 @@ componentDidMount(){
     return(
         <div>
             <Switch>
-            <Route exact path='/' render={()=><ShoppingCart {...this.props} />}/>
-            <Route exact path='/newproduct' render={()=><NewProduct {...this.props} />}/>
+                <Route exact path='/' render={()=><ShoppingCart {...this.props} />}/>
+                <Route exact path='/newproduct' render={()=><NewProduct {...this.props} />}/>
             </Switch>
         </div>
     )
